@@ -14,7 +14,7 @@ array = ข้อมูล array ที่จะ bind เข้าไป
 //select
 $select = query("SELECT * FROM training_admin");
 $row = $select->fetch(PDO::FETCH_ASSOC);
-print_r($result);
+print_r($row);
 
 //insert
 $insert = query("INSERT INTO training_admin (admin_user,admin_pass) VALUES (?,?);",['jame','maya2600']);
